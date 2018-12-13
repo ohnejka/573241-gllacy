@@ -8,6 +8,12 @@
   </head>
   <body>
 
+            <input class="visually-hidden" type="radio"  id="slider-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio"  id="slider-2" name="toggle">
+            <input class="visually-hidden" type="radio"  id="slider-3" name="toggle">
+
+<div class="site-wrapper">
+
     <header>
     	<div class="header-wrapper">
     		<img src="img/logo.svg" alt="Логотип компании Gllacy Shop" width="154" height="64">
@@ -26,11 +32,13 @@
 	    			<li ><a class="about-us" href="">О Компании</a></li>
 	    		</ul>
 	    		<ul class="user-navigation">
-	    			<li class="search-item user-navigation-item">
-	    				<span class="visually-hidden">Поиск по сайту</span>
-	    				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-						    <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
-						</svg>
+	    			<li>
+                        <a class="search-item user-navigation-item" href="">
+                            <span class="visually-hidden">Поиск по сайту</span>
+    	    				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+    						    <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+    						</svg>
+                        </a>
 					</li>
 	    			
 	    			<li>
@@ -46,9 +54,9 @@
 	    				<a class="cart-item user-navigation-item" href="">
 	    					Пусто
 			    			<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-							    <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"fill="#FFF"/>
-							    <circle cx="6.984" cy="18" r="2"fill="#FFF"/>
-							    <circle cx="15.984" cy="18" r="2"fill="#FFF"/>
+							    <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" fill="#FFF"/>
+							    <circle cx="6.984" cy="18" r="2" fill="#FFF"/>
+							    <circle cx="15.984" cy="18" r="2" fill="#FFF"/>
 							</svg>
 						</a>
 					</li>
@@ -56,31 +64,36 @@
 	    	</nav>
     	</div>
     </header>
-    <main>
+
+    <main class="main-content">
+    <div class="main-wrapper">
     	<h1 class=" visually-hidden">Gllacy - магазин самого вкусного мороженого!</h1>
 
     	<section class="main-sliders">
     		<h2 class="visually-hidden">Выбор покупателей</h2>
-    		<input class="visually-hidden" type="radio" value="slider-1" id="slider-1" name="slider-1">
-    		<input class="visually-hidden" type="radio" value="slider-2" id="slider-2" name="slider-2">
-    		<input class="visually-hidden" type="radio" value="slider-3" id="slider-3" name="slider-3">
     		<ul class="sliders-list">
-    			<li class="slider-item">
-    				<h2>Крем-брюле и пломбир с малиновым джемом</h2>
-    				<img src="" alt="Крем-брюле и пломбир с малиновым джемом" width="" height="">
+    			<li class="slider-item" id="slide-1">
+    				<h3>Крем-брюле и пломбир с малиновым джемом</h3>
+    				<a class="button slider-button" href="">Давайте оба!</a>
+    			</li>
+    			<li class="slider-item" id="slide-2">
+    				<h3>Шоколадный пломбир и лимонный сорбет</h3>
     				<a class="button" href="">Давайте оба!</a>
     			</li>
-    			<li class="slider-item">
-    				<h2>Шоколадный пломбир и лимонный сорбет</h2>
-    				<img src="" alt="Шоколадный пломбир и лимонный сорбет" width="" height="">
-    				<a class="button" href="">Давайте оба!</a>
-    			</li>
-    			<li class="slider-item">
-    				<h2>Пломбир с помадкой и клубничный щербет</h2>
-    				<img src="" alt="Пломбир с помадкой и клубничный щербет" width="" height="">
+    			<li class="slider-item" id="slide-3">
+    				<h3>Пломбир с помадкой и клубничный щербет</h3>
     				<a class="button" href="">Давайте оба!</a>
     			</li>
     		</ul>
+            <p class="slider-open-hours">
+                С 10 до 20, ежедневно
+                <span class="tel">8 812 450-25-25</span>
+            </p>
+            <div class="slider-controls">
+                <label for="slider-1">Первый слайд</label>
+                <label for="slider-2">Второй слайд</label>
+                <label for="slider-3">Третий слайд</label>
+          </div>
     	</section>
 
     	<section class="banners">
@@ -157,8 +170,10 @@
     			<p>Для заказов по телефону:</p>
     			<p>8 812 450-25-25 (с 10 до 20 ежедневно)</p>
     			<a class="button" href="">Форма обратной связи</a>
-    		</address>
+            </div>
     	</section>
+    </div>
+
     </main>
 
     <footer>
@@ -217,7 +232,8 @@
         	<button type="submit" value="Отправить">Отправить</button>
         </form>
     </section>
-    
 
+
+</div>
   </body>
 </html>
