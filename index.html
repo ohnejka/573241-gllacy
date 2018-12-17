@@ -165,49 +165,77 @@
 
         	<section class="subscribe">
         		<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
-        		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        		<form class="subscribtion-from" method="get" action="https://echo.htmlacademy.ru">
-            				    <label for="user-email" class="visually-hidden">Введите адрес email:</label>
-            				    <input type="email" name="user-email" id="user-email" placeholder="Электронная почта">
-            				    <button type="submit" value="Отправить">Отправить</button>
-            			</form>
+                <div class="subscribe-inner">
+            		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            		<form class="subscribtion-from" method="get" action="https://echo.htmlacademy.ru">
+                				    <label for="user-email" class="visually-hidden">Введите адрес email:</label>
+                				    <input type="email" name="user-email" id="user-email" placeholder="Электронная почта">
+                				    <button class="button" type="submit" value="Отправить">Отправить</button>
+                			</form>
+                </div>
         	</section>
         </section>
+</div>
+
 
     	<section class="contact-us">
-    		<img src="" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" width="" height="">
-    		<div>
-    			<p>Адрес главного офиса и офлайн-магазина:</p>
-    			<address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+           <div class="nopadding-wrapper">
+    		      <img src="img/map_static.jpg" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+            </div>
+
+        <div class="main-wrapper">
+    		<div class="address-wrapper">
+    			<p>Адрес главного офиса <br>и офлайн-магазина:</p>
+    			<address class="address-bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
     			<p>Для заказов по телефону:</p>
-    			<p>8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+    			<p class="address-bold"> 8 812 450-25-25</p>
+                <p>(с 10 до 20 ежедневно)</p>
     			<a class="button" href="">Форма обратной связи</a>
             </div>
+       </div>
     	</section>
-    </div>
+
 
     </main>
 
     <footer>
-    	<ul class="social">
-    		<li><a href="">Twitter</a></li>
-    		<li><a href="">Instagram</a></li>
-    		<li><a href="">Facebook</a></li>
-    		<li><a href="">Вконтакте</a></li>
-    	</ul>
-    	<ul class="additional-info">
-    		<li><a href="">Для поставщиков</a></li>
-    		<li><a href="">О производстве</a></li>
-    		<li><a href="">Наши документы</a></li>
-    		<li><a href="">Экологические стандарты</a></li>
-    	</ul>
-    	<span class="copyright">
-    		Сделано в HTML Academy © 2017
-    	</span>
+        <div class="main-wrapper">
+
+        	<ul class="social">
+        		<li><a href=""><span class="visually-hidden">Twitter</span></a></li>
+        		<li><a href=""><span class="visually-hidden">Instagram</span></a></li>
+        		<li><a href=""><span class="visually-hidden">Facebook</span></a></li>
+        		<li><a href=""><span class="visually-hidden">Вконтакте</span></a></li>
+        	</ul>
+
+        	<ul class="additional-info">
+        		<li>
+                    <ul class="add-one">
+                        <li><a href="" class="for-suppliers">Для поставщиков</a></li>
+                        <li><a href="">О производстве</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="add-two">
+                        <li><a href="">Наши документы</a></li>
+                        <li><a href="">Экологические стандарты</a></li>
+                    </ul>
+                </li>
+        	</ul>
+
+        	<span class="copyright">
+        		<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в <span>HTML Academy</span> © 2017</a>
+        	</span>
+
+    </div>
     </footer>
 
 
-    <section class="modal modal-login">
+
+
+
+
+    <section class="modal modal-login visually-hidden">
     	<h2 class="visually-hidden">Вход на сайт</h2>
     	<form class="login-form" method="get" action="https://echo.htmlacademy.ru">
         	<label for="login-form-email" class="visually-hidden">Введите адрес email:</label>
@@ -221,7 +249,7 @@
         			</form>
     </section>
 
-    <section class="modal modal-search">
+    <section class="modal modal-search visually-hidden">
     	<form class="user-navigation-search" method="get" action="https://echo.htmlacademy.ru">
 	        <label for="searchsite" class="visually-hidden">Поиск по сайту</label>
 	        <input type="search" name="searchsite" id="searchsite" placeholder="Что ищем?">
@@ -230,7 +258,7 @@
     </section>
 
 
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback visually-hidden">
     	<h2>Мы обязательно вам ответим!</h2>
     	<form class="feedback-form" method="get" action="https://echo.htmlacademy.ru">
         	<label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
@@ -245,8 +273,9 @@
         </form>
     </section>
 
+</div>
+</div>
 
-</div>
-</div>
+
   </body>
 </html>
