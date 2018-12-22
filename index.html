@@ -12,18 +12,18 @@
             <input class="visually-hidden" type="radio"  id="slider-2" name="toggle">
             <input class="visually-hidden" type="radio"  id="slider-3" name="toggle">
 <div class="site-background">
-<div class="site-wrapper">
+<div class="site-wrapper index">
 
     <header>
     	<div class="header-wrapper">
     		<img src="img/logo.svg" alt="Логотип компании Gllacy Shop" width="154" height="64">
 	    	<nav class="main-navigation">
 	    		<ul class="site-navigation">
-	    			<li><a class="catalogue" href="">Каталог</a>
+	    			<li class="show-submenu"><a class="catalogue" href="">Каталог</a>
 	    				<ul class="submenu">
 	    					<li><a href="">Новинки</a></li>
 	    					<li><a href="">Сливочное</a></li>
-	    					<li><a href="">Щербеты</a></li>
+	    					<li><a href="" class="submenu-current">Щербеты</a></li>
 	    					<li><a href="">Фруктовый лед</a></li>
 	    					<li><a href="">Мелорин</a></li>
 	    				</ul>
@@ -32,16 +32,21 @@
 	    			<li ><a class="about-us" href="">О Компании</a></li>
 	    		</ul>
 	    		<ul class="user-navigation">
-	    			<li>
+	    			<li class="search">
                         <a class="search-item user-navigation-item" href="">
                             <span class="visually-hidden">Поиск по сайту</span>
     	    				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
     						    <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
     						</svg>
                         </a>
+                        <form class="user-navigation-search" method="get" action="https://echo.htmlacademy.ru">
+                            <label for="searchsite" class="visually-hidden">Поиск по сайту</label>
+                            <input type="search" name="searchsite" id="searchsite" placeholder="Что ищем?">
+                            <button class="button visually-hidden" type="submit" value="search">Найти</button>
+                        </form>
 					</li>
 	    			
-	    			<li>
+	    			<li class="login">
 	    				<a class="enter-item user-navigation-item" href="">
 	    					Вход
 		    				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
@@ -49,7 +54,28 @@
 	        					<path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" fill="#FFF"/>
 							</svg>
 						</a>
+
+                        <form class="login-form" method="get" action="https://echo.htmlacademy.ru">
+
+                            <label for="login-form-email" class="visually-hidden">Введите адрес email:</label>
+                            <input type="email" name="login-form-email" id="login-form-email" placeholder="Электронная почта">
+
+                            <label for="login-form-password" class="visually-hidden">Введите пароль:</label>
+                            <input type="password" name="login-form-password" id="login-form-password" placeholder="Пароль">
+                            
+                            <div class="login-links">
+                                <a href="">Забыли пароль?</a>
+                                <a href="">Новая регистрация</a>
+                            </div>
+
+                            <button class="button" type="submit" value="Войти">Войти</button>
+                            
+                         </form>
+
+
+
 	    			</li>
+
 	    			<li>
 	    				<a class="cart-item user-navigation-item" href="">
 	    					Пусто
@@ -117,6 +143,7 @@
     				<img src="img/hit_1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
     				<p class="hit-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
                     <p class="hit-price">310 ₽<span>/кг</span></p>
+                    <a class="button" href="">Быстрый просмотр</a>
                     
     			</li>
 
@@ -124,12 +151,14 @@
     				<img src="img/hit_2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
     				<p class="hit-name">Сливочно-кофейное с кусочками шоколада</p></a>
                     <p class="hit-price">380 ₽<span>/кг</span></p>
+                    <a class="button" href="">Быстрый просмотр</a>
     			</li>
 
     			<li><a href="">
     				<img src="img/hit_3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
     				<p class="hit-name">Сливочно-клубничное с присыпкой из белого шоколада</p></a>
                     <p class="hit-price">355 ₽<span>/кг</span></p>
+                    <a class="button" href="">Быстрый просмотр</a>
                     
     			</li>
 
@@ -137,6 +166,7 @@
     				<img src="img/hit_4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
     				<p class="hit-name">Сливочное крем-брюле с карамельной подливкой</p></a>
                     <p class="hit-price">415 ₽<span>/кг</span></p>
+                    <a class="button" href="">Быстрый просмотр</a>
                 
     			</li>
     		</ul>
@@ -231,47 +261,26 @@
     </footer>
 
 
+    <section class="modal contact-us">
+        <h2>Мы обязательно вам ответим!</h2>
 
+        <form class="contact-us-form" method="get" action="https://echo.htmlacademy.ru">
 
+            <label for="letter-name" class="visually-hidden">Введите ваше имя</label>
+            <input type="text" name="letter-name" id="letter-name" placeholder="Как вас зовут?">
 
+            <label for="letter-email" class="visually-hidden">Введите адрес email:</label>
+            <input type="email" name="letter-email" id="letter-email" placeholder="Ваша почта для ответа?">
 
-    <section class="modal modal-login visually-hidden">
-    	<h2 class="visually-hidden">Вход на сайт</h2>
-    	<form class="login-form" method="get" action="https://echo.htmlacademy.ru">
-        	<label for="login-form-email" class="visually-hidden">Введите адрес email:</label>
-        	<input type="email" name="login-form-email" id="login-form-email" placeholder="Электронная почта">
-
-        	<label for="login-form-password" class="visually-hidden">Введите пароль:</label>
-        	<input type="password" name="login-form-password" id="login-form-password" placeholder="Пароль">
-        	<a href="">Забыли пароль?</a>
-        	<a href="">Новая регистрация</a>
-        	<button type="submit" value="Войти">Войти</button>
-        			</form>
-    </section>
-
-    <section class="modal modal-search visually-hidden">
-    	<form class="user-navigation-search" method="get" action="https://echo.htmlacademy.ru">
-	        <label for="searchsite" class="visually-hidden">Поиск по сайту</label>
-	        <input type="search" name="searchsite" id="searchsite" placeholder="Что ищем?">
-	        <button type="submit" value="search">Найти</button>
-	        </form>
-    </section>
-
-
-    <section class="modal modal-feedback visually-hidden">
-    	<h2>Мы обязательно вам ответим!</h2>
-    	<form class="feedback-form" method="get" action="https://echo.htmlacademy.ru">
-        	<label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
-        	<input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
-
-        	<label for="feedback-email" class="visually-hidden">Ваша почта для ответа?</label>
-        	<input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
-
-        	<textarea>Напишите что-нибудь...        		
-        	</textarea>
-        	<button type="submit" value="Отправить">Отправить</button>
+            <textarea placeholder="Напишите что-нибудь..."></textarea>
+                            
+            <button class="button" type="submit" value="send">Отправить</button>
+            <button class= "close-modal" type="button">Закрыть</button>
+                            
         </form>
     </section>
+
+
 
 </div>
 </div>
