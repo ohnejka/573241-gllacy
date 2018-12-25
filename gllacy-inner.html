@@ -14,7 +14,7 @@
 
     <header>
     	<div class="header-wrapper inner">
-    		<img src="img/logo.svg" alt="Логотип компании Gllacy Shop" width="154" height="64">
+    		<a href="index.html"><img src="img/logo.svg" alt="Логотип компании Gllacy Shop" width="154" height="64"></a>
 	    	<nav class="main-navigation">
 	    		<ul class="site-navigation">
 	    			<li class="show-submenu"><a class="catalogue page-current" href="">Каталог</a>
@@ -93,12 +93,17 @@
 
 
 
-    <main>
+    <main class="main-inner">
+
     	<ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Каталог</a></li>
           <li class="breadcrumbs-current">Сливочное</li>
         </ul>
+
+
+
+
         <h1>Сливочное мороженое</h1>
 
 
@@ -229,7 +234,7 @@
         		<li>
         			<div class="img-wrapper">
     				<img src="img/inner_page/6.png" alt="Сливочно-черничное с цельными ягодами черники " width="267" height="267"></div>
-    				<a href="" class="icecream-name">Сливочно-черничное с цельными ягодами черники</a>
+    				<a href="" class="icecream-name">Сливочно-черничное с<br> цельными ягодами черники</a>
                     <p class="icecream-price">410 ₽<span>/кг</span></p>
                     <a class="button" href="">Быстрый просмотр</a>
         		</li>
@@ -278,15 +283,17 @@
         	</ul>
         </section>
 
+        
         <ul class="pagination">
-            <li><a class="pagination-item page-back" href="#">Назад</a></li>
-            <li><a class="pagination-item" href="#">1</a></li>
+            <li><a class="page-back inactive" href="#"><span class="visually-hidden">Назад</span></a></li>
+            <li><a class="pagination-item active" href="#">1</a></li>
             <li><a class="pagination-item" href="#">2</a></li>
             <li><a class="pagination-item" href="#">3</a></li>
             <li><a class="pagination-item" href="#">4</a></li>
             <li><a class="pagination-item" href="#">5</a></li>
-            <li><a class="pagination-item page-forward" href="#">Вперед</a></li>
+            <li><a class="page-forward" href="#"><span class="visually-hidden">Вперед</span></a></li>
          </ul>
+     
 
 
     </main>
