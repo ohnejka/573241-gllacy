@@ -1389,15 +1389,248 @@ font-size: 14px;
 
 .main-inner h1 {
 	margin: 0;
+	margin-bottom: 28px;
 	padding: 0;
-	 font-size: 35px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 41px;
-  color: rgba(255, 255, 255, 1);
+	font-size: 35px;
+  	font-weight: 700;
+  	font-style: normal;
+  	line-height: 41px;
+  	color: rgba(255, 255, 255, 1);
 
 }
 
+/*  ------------- filters ------------------    */
+
+.filters {
+	width: 900px;
+}
+
+.filters form {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+}
+
+.filter-form fieldset {
+	font-size: 14px;
+    font-weight: 500;
+	font-style: normal;
+	line-height: 16px;
+	color: rgba(255, 255, 255, 1);
+	border: none;
+	outline: 1px dotted red;
+	margin-bottom: 6px;
+  
+}
+
+
+.sorting select {
+
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-left: -12px;
+	min-width: 192px;
+	
+
+
+	border: none;
+	border-radius: 50px;
+
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+	appearance: none;
+
+	font-size: 16px;
+    font-weight: 500;
+	font-style: normal;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 1);
+
+	background-color: rgba(255, 255, 255, 0.2);
+	background-image: url('../img/select-down.svg');
+  	background-repeat: no-repeat;
+  	background-position: 167px 14px;
+
+}
+
+.sorting select:hover,
+.sorting select:focus {
+	color: rgba(0, 0, 0, 1);
+	background-image: url('../img/select-down-hover.svg');
+}
+
+
+.price {
+	min-width: 230px;
+	position: relative;
+}
+
+.price legend {
+	padding-left: 5px;
+	position: relative;
+}
+
+.price-controls {
+	position: absolute;
+	top: -15px;
+	left: 57px;
+}
+
+.price-controls input {
+
+	color: rgba(255, 255, 255, 1);
+	background-color: transparent;
+	border: none;
+	width: 28px;
+	padding: 0;
+	font-size: 14px;
+    font-weight: 500;
+	font-style: normal;
+	line-height: 16px;
+
+}
+
+.filter-price-range {
+	margin-left: -10px;
+}
+
+.filter-price-range .range-controls {
+	position: relative;
+	width: 220px;
+	height: 37px;
+	background-color: rgba(	255, 255, 255, 0.2);
+	border-radius: 50px;
+}
+
+.filter-price-range .scale {
+	width: 176px;
+	height: 4px;
+	background-color: rgba(	248, 247, 244, 0.5);
+	position: absolute;
+	top: 17px;
+	left: 22px;
+}
+
+.filter-price-range .bar {
+	width: 107px;
+	height: 4px;
+	background-color: rgba(	248, 247, 244, 1);
+	position: absolute;
+	top: 0px;
+	left: 22px;
+}
+
+.toggle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgba(132, 157, 143, 1);
+	border: 7px solid rgba(255, 255, 255, 1);
+	cursor: pointer;
+
+}
+
+.toggle-max {
+	position: absolute;
+	top: 9px;
+	left: 133px;
+}
+
+.toggle-min {
+	position: absolute;
+	top: 9px;
+	left: 35px;
+}
+
+.toggle:hover,
+.toggle:focus,
+.toggle:active {
+	transform: scale(1.2);
+
+}
+
+
+.fat legend {
+	padding-left: 3px;
+}
+
+.fat .fat-list {
+	list-style: none;
+	margin: 0;
+	margin-left: -10px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	position: relative;
+	min-width: 413px;
+	height: 37px;
+	background-color: rgba(	255, 255, 255, 0.2);
+	border-radius: 50px;
+}
+
+.fat-list label {
+	position: relative;
+	display: block;
+	font-size: 16px;
+    font-weight: 500;
+	font-style: normal;
+	line-height: 18px;
+	padding-left: 45px;
+	padding-top: 10px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.fat-list label::before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 12px;
+
+	width: 25px;
+	height: 25px;
+
+	background-image: url('../img/radio-off.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.8;
+
+}
+
+.fat-list input:checked ~ label::before {
+	background-image: url('../img/radio-on.svg');
+}
+
+.fat-list input:checked ~ label,
+.fat-list input:checked ~ label::before {
+	opacity: 1;
+}
+
+.fat-list input:disabled ~ label::before,
+.fat-list input:disabled ~ label {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.fat-list li {
+	margin-right: 5px;
+}
+
+.fat-list label:hover::before,
+.fat-list label:focus::before,
+.fat-list label:hover,
+.fat-list label:focus {
+	opacity: 1;
+}
+
+.fat-list label:active::before {
+	opacity: 0.5;
+}
 
 /*  ------------- pagination ------------------    */
 
