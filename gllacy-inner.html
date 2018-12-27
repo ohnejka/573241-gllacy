@@ -84,6 +84,14 @@
 							    <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
 							</svg>
 						</a>
+
+                        
+
+
+
+
+
+
 					</li>
 	    		</ul>
 	    	</nav>
@@ -177,7 +185,7 @@
                         	<label for="topping-fruits">фрукты</label>
         				</li>
         				<li>
-        					<input class="visually-hidden" type="checkbox" name="topping-syrope" id="topping-syrope">
+        					<input class="visually-hidden" type="checkbox" name="topping-syrope" id="topping-syrope" disabled>
                         	<label for="topping-syrope">сиропы</label>
         				</li>
         				<li>
@@ -186,7 +194,7 @@
         				</li>
         			</ul>
         		</fieldset>
-        		<button type="submit">Применить</button>
+        		<button type="submit" class="filter-button">Применить</button>
         	</form>
         </section>
 
@@ -234,7 +242,7 @@
         		<li>
         			<div class="img-wrapper">
     				<img src="img/inner_page/6.png" alt="Сливочно-черничное с цельными ягодами черники " width="267" height="267"></div>
-    				<a href="" class="icecream-name">Сливочно-черничное с<br> цельными ягодами черники</a>
+    				<a href="" class="icecream-name">Сливочно-черничное с цельными ягодами черники</a>
                     <p class="icecream-price">410 ₽<span>/кг</span></p>
                     <a class="button" href="">Быстрый просмотр</a>
         		</li>
@@ -341,3 +349,38 @@
 
     </div>
     </footer>
+
+    <section class="modal modal-cart">
+        <h2 class="visually-hidden">Ваша корзина:</h2>
+        <table class="cart-table">
+           <tr class="visually-hidden">
+                <th>Удалить товар из корзины</th>
+                <th>Товар</th>
+                <th>Количество</th>
+                <th>Цена</th>
+                <th>Стоимость</th>
+           </tr>
+
+            <tr class="one-line">
+                <td><a class="cart-delete" href=""><span class="visually-hidden">Удалить</span></a></td>
+                <td class><a class="cart-name ice-one" href="">Пломбир с апельсиновым джемом</a></td>
+                <td><span class="cart-qty">1,5 кг</span></td>
+                <td><span class="cart-price">200 руб.</span></td>
+                <td><span class="cart-total">300 руб.</span></td>
+            </tr>
+            <tr>
+                <td><a class="cart-delete" href=""><span class="visually-hidden">Удалить</span></a></td>
+                <td><a class="cart-name ice-two" href="">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                <td><span class="cart-qty">1,5 кг</span></td>
+                <td><span class="cart-price">300 руб.</span></td>
+                <td><span class="cart-total">450 руб.</span></td>
+            </tr>
+        </table>
+        <span class="final-total">Итого: 750 руб.</span>
+        <a class="button">Оформить заказ</a>
+
+    </section>
+
+
+</body>
+</html>
